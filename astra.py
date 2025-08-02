@@ -6,8 +6,6 @@ import google.generativeai as genai
 from gtts import gTTS
 from io import BytesIO
 
-# Configure Gemini API
-genai.configure(api_key="AIzaSyBviI-5MF2edr6H8KLQ8mO6sPLy-DjTS64")
 model = genai.GenerativeModel('gemini-1.5-flash')
 
 Astra_active_speak = ["Astra is on your service", "Yeahh!", "Yes Sir", "I'm active", "Hello"]
@@ -65,3 +63,4 @@ if st.button("🎙️ Start Listening"):
             st.error("Listening timed out.")
         except Exception as e:
             st.error(f"Error: {e}")
+

@@ -1,0 +1,5 @@
+streamlit
+gtts
+speechrecognition
+google-generativeai
+pyaudio ; platform_system == "Windows"
